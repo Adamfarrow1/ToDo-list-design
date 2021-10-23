@@ -26,4 +26,4 @@ run {
     standardInput = System.in
 }
 
-mainClassName = "baseline.TipCalculator"
+mainClassName = "baseline.Application"
