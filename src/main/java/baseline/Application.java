@@ -14,17 +14,20 @@ import java.util.Objects;
 public class Application extends javafx.application.Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root =
-                FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Application.fxml")));
-
-        Scene scene = new Scene(root); // attach scene graph to scene
-        stage.setTitle("To Do List"); // displayed in window's title bar
-        stage.setScene(scene); // attach scene to stage
-        stage.show(); // display the stage
+        //locates the root as the path to the fxml
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Application.fxml")));
+        //creates a new scene
+        Scene scene = new Scene(root);
+        //sets the title to do List
+        stage.setTitle("ToDo List");
+        //sets the scene as scene(root)
+        stage.setScene(scene);
+        //shows the stage
+        stage.show();
     }
 
     public static void main(String[] args) {
-        // create a TipCalculator object and call its start method
+        // create a To DO List object and calls its start method
         launch(args);
     }
 }
