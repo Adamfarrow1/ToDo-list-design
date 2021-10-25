@@ -1,6 +1,6 @@
 /*
  *  UCF COP3330 Summer 2021 Application Assignment 1 Solution
- *  Copyright 2021 first_name last_name
+ *  Copyright 2021 Adam Farrow
  */
 package baseline;
 
@@ -18,7 +18,7 @@ public class Application extends javafx.application.Application {
                 FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Application.fxml")));
 
         Scene scene = new Scene(root); // attach scene graph to scene
-        stage.setTitle("Tip Calculator"); // displayed in window's title bar
+        stage.setTitle("To Do List"); // displayed in window's title bar
         stage.setScene(scene); // attach scene to stage
         stage.show(); // display the stage
     }
